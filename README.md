@@ -1,4 +1,4 @@
-# [Movie List]() 🎬
+# [Movie List](https://movies-catalogs.netlify.app) 🎬
 
 ## Objetivo
 Desenvolver uma aplicação web utilizando Angular para criar um catálogo de filmes interativo e visualmente atraente, permitindo a exploração de informações detalhadas sobre diferentes filmes.
@@ -67,7 +67,7 @@ O Movie List é uma aplicação web que permite aos usuários pesquisar, visuali
 - Filme sorteado: Adicionar um sistema para recomendar um filme aleatório toda semana aos usuários.
 - Paginator: Adicionar um Paginator para o usuario navegar entre as páginas de filmes 
 
-# [PREVIEW WEBSITE]()
+# [PREVIEW WEBSITE](https://movies-catalogs.netlify.app)
 
 ## Resultados
 
