@@ -65,6 +65,7 @@ O Movie List é uma aplicação web que permite aos usuários pesquisar, visuali
 - Informações Adicionais: Incluir trailers dos filmes e mais detalhes como elenco e equipe de produção.
 - Dark Mode: Implementar um tema escuro para melhor usabilidade em ambientes de pouca luz.
 - Filme sorteado: Adicionar um sistema para recomendar um filme aleatório toda semana aos usuários.
+- Paginator: Adicionar um Paginator para o usuario navegar entre as páginas de filmes 
 
 # [PREVIEW WEBSITE]()
 
