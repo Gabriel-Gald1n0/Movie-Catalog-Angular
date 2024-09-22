@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<section class="favorites_container">
+  <div class="favText">
+    <div class="img_container">
+      <img src="../../assets/img/favorite.png" alt="favorite">
+    </div>
+    <h1>Favorites</h1>
+  </div>
+  <ol class="cards" *ngIf="favorites.length > 0">
+    <li class="cards__item" *ngFor="let movie of favorites">
+      <mat-card class="example-card" appearance="outlined">
+        <img mat-card-image [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="Poster of {{ movie.title }}">
+        <mat-card-header>
+          <mat-card-title>{{ movie.title }}</mat-card-title>
+          <mat-card-subtitle>{{ movie.release_date | date }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions>
+          <button mat-icon-button (click)="removeFavorite(movie.id)">
+            <mat-icon color="warn">delete</mat-icon>
+          </button>
+          <button mat-button (click)="goDetails(movie)">COMMENT</button>
+        </mat-card-actions>
+      </mat-card>
+    </li>
+  </ol>
+  <div class="erro_container" *ngIf="favorites.length === 0">
+    <img src="../../../assets/img/error.png" alt="image error">
+    <p>Nenhum filme favoritado.</p>
+  </div>
+</section>
+<app-footer></app-footer>

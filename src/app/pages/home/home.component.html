@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<section class="section_container">
+  <div class="container">
+    <div class="title_container">
+      <div class="logo_Container">
+        <img  src="../../assets/img/MOVIE LIST.png" alt="logo">
+      </div>
+      <h1>Movie List</h1>
+    </div>
+
+
+    <app-search (emmitSearch)="onSearch($event)"></app-search>
+    <app-card [searchQuery]="searchQuery"></app-card>
+  </div>
+</section>
+<app-footer></app-footer>

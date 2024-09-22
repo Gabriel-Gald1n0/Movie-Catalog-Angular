@@ -1,0 +1,8 @@
+<div class="search">
+  <form (submit)="search($event, input.value)">
+    <input type="text" class="search-input" #input (input)="onInputChange(input.value)" (keyup)="search($event, input.value)" placeholder="Search Movie...">
+    <button mat-icon-button type="submit" class="search-button">
+      <mat-icon>search</mat-icon>
+    </button>
+  </form>
+</div>

@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+<div class="details_container" >
+  <div class="detailsText">
+    <div class="img_container">
+      <img src="../../assets/img/favorite.png" alt="details">
+    </div>
+    <h1>Details</h1>
+  </div>
+  <div class="details" *ngIf="movie">
+    <div class="details__item">
+      <mat-card class="example-card" appearance="outlined">
+
+        <img mat-card-image [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="Poster of {{ movie.title }}">
+
+        <div class="cardBtn">
+        <mat-card-actions>
+          <button mat-icon-button (click)="addToFavorites()">
+            <mat-icon [ngClass]="{'favorite': checkIfIsFavorite(movie)}">favorite</mat-icon>
+          </button>
+        </mat-card-actions></div>
+        <div class="cardText">
+        <mat-card-header>
+          <mat-card-title>{{ movie.title }}</mat-card-title>
+          <mat-card-subtitle >{{ movie.release_date | date }}  <span class="spacing"></span>
+            <fa-icon [icon]="faStar" style="color: rgb(255, 255, 0);" size="lg"></fa-icon>
+          {{ movie.vote_average.toFixed(1) }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+          <h2>Sinopse</h2>
+          <p class="text-p">{{ movie.overview }}</p>
+        </mat-card-content>
+      </div>
+
+      </mat-card>
+    </div>
+  </div>
+
+  <button mat-raised-button (click)="openCommentDialog()">Adicionar Comentário</button>
+
+  <div class="comment_container" *ngIf="comments.length > 0">
+    <h3>Comentários</h3>
+    <div *ngFor="let comment of comments; let i = index" class="comment">
+      <p>{{ comment }}</p>
+      <button mat-button (click)="deleteComment(comment)"> <fa-icon [icon]="faTrash" style="color: rgb(255, 0, 0);" size="lg"></fa-icon></button>
+    </div>
+  </div>
+
+  <div class="erro_container" *ngIf="movie === undefined">
+    <img src="../../../assets/img/error.png" alt="image error">
+    <p>Nenhum filme selecionado.</p>
+  </div>
+</div>
+<app-footer></app-footer>
