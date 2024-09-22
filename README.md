@@ -70,21 +70,31 @@ O Movie List é uma aplicação web que permite aos usuários pesquisar, visuali
 
 ## Resultados
 
-### Home Pgae
+### Home Page
 ![image](https://github.com/user-attachments/assets/cdde3928-749f-41d1-88ed-1eaccb777a40)
+
 ![image](https://github.com/user-attachments/assets/0273e7f0-da9f-4b7e-af0d-90401acc2434)
+
 ![image](https://github.com/user-attachments/assets/bbb16fa7-9a8a-46e9-8f41-66e6e578cb0b)
 
-### Favoritos 
+### Favorites 
 ![image](https://github.com/user-attachments/assets/112bd51c-678f-4193-bab6-561759f65008)
+
 ![image](https://github.com/user-attachments/assets/32198a5a-c630-4ff2-b779-0750473c19f7)
 
 ### Details
 ![image](https://github.com/user-attachments/assets/2fc91f09-3397-4956-8d32-adebe78a0189)
+
 ![image](https://github.com/user-attachments/assets/9fc870bb-5b90-43f7-a1d4-5ce6cc646507)
 
 ### Caixa de Comentarios
 ![image](https://github.com/user-attachments/assets/543a5089-f442-44ef-9cd5-0fde76d460f7)
+
+### Responsividade
+![image](https://github.com/user-attachments/assets/4ed9ec02-9fe1-4938-a515-9ca7484e9432)
+
+![image](https://github.com/user-attachments/assets/d5913a28-bc95-43fd-9c4a-68860dbb77ba)
+
 
 
 
